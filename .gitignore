@@ -5,6 +5,7 @@ temp
 build
 *.wt
 __data__/
+__data__/*.wt
 
 # Created by https://www.gitignore.io/api/vim,osx,node,linux,windows
 ### Linux ###
