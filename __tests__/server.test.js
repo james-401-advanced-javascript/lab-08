@@ -43,9 +43,11 @@ describe('web server', () => {
       let id = data.body._id;
       let updated = await mockServer
         .put('/people/Sarah-Smalls')
-        .send(id, { firstName: 'Suzie' });
+        .send(id)
+        .send({ firstName: 'Suzie' });
       let dbResults = await mockServer.get('/people/Suzie-Smalls');
       expect(data.status).toBe(200);
+      expect(updated.status).toBe(200);
       expect(dbResults).toBeTruthy();
     } catch (error) {
       console.error(error);
@@ -96,8 +98,10 @@ describe('web server', () => {
       let id = data.body._id;
       let updated = await mockServer
         .put('/teams/Black-Panthers')
-        .send(id, { name: 'Black Pumas' });
+        .send(id)
+        .send({ name: 'Black Pumas' });
       let dbResults = await mockServer.get('/people/Suzie-Smalls');
+      expect(updated.status).toBe(200);
       expect(data.status).toBe(200);
       expect(dbResults).toBeTruthy();
     } catch (error) {

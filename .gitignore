@@ -3,6 +3,8 @@ db
 .env
 temp
 build
+.wt
+__data__
 
 # Created by https://www.gitignore.io/api/vim,osx,node,linux,windows
 ### Linux ###
