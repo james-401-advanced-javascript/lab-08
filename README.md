@@ -10,10 +10,6 @@
 - [travis](https://travis-ci.com/james-401-advanced-javascript/lab-08)
 - [front-end](https://jamesdunn-lab-08.herokuapp.com)
 
-#### Documentation
-
-- [jsdoc](https://jamesdunn-lab-08.herokuapp.com/docs)
-
 ### Modules
 
 #### `people-routes.js`
@@ -57,7 +53,7 @@
 #### Tests
 
 - How do you run tests?
-- `npm test`
+- `npm test __tests__/server.test.js`
 
 #### UML
 
